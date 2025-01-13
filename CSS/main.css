@@ -5,3 +5,94 @@ body {
     margin: 0;
     padding: 0;
 }
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown styling */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content li {
+    display: block;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 12px 2px;
+    font-size: small;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%; /* Stack items vertically */
+    }
+
+    nav ul li a {
+        padding: 12px 20px; /* Adjust padding for better touch targets */
+    }
+
+    nav ul li.dropdown {
+        position: static; /* Make dropdown behave as part of the flow */
+    }
+
+    nav ul li .dropdown-content {
+        position: relative; /* Position dropdown inside the flow */
+        min-width: 100%;
+        display: none; /* Keep dropdown hidden initially */
+    }
+
+    nav ul li.dropdown:hover .dropdown-content {
+        display: block; /* Show dropdown on hover */
+    }
+
+    nav ul li .dropdown-content li a {
+        padding: 12px 20px; /* Adjust padding for mobile */
+    }
+}
