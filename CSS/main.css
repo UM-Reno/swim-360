@@ -1,11 +1,54 @@
 /* Basic CSS to give the page a slight gray background */
 body {
-    background-color: #f0f0f0; /* Slight gray background */
-    font-family: Arial, sans-serif; /* Set a clean font */
-    margin: 6vw;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    /* Slight gray background */
+    font-family: Arial, sans-serif;
+    /* Set a clean font */
+    margin: 0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     padding: 0;
+    height: 90vh;
+}
+
+header {
+    background-color: #4e7eb2;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 0;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    overflow-y: scroll;
+}
+
+/* WebKit scrollbar styles */
+main::-webkit-scrollbar {
+    width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: #0000001f;
+    border-radius: 5px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: #4e7eb2;
+    border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+    background: #295584;
 }
 
 nav {
@@ -15,6 +58,7 @@ nav {
     left: 0;
     height: 5vh;
     background-color: #4e7eb2;
+    z-index: 10;
 }
 
 nav ul {
@@ -79,24 +123,35 @@ footer {
     width: 100vw;
     bottom: 0;
     left: 0;
+    z-index: 10;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     body {
-        background-color: #f0f0f0; /* Slight gray background */
-        font-family: Arial, sans-serif; /* Set a clean font */
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
         margin: 0;
-        margin-bottom: 6vh;
         padding: 0;
+        height: 95vh;
     }
-    
+
+    header h1 {
+        font-size: larger;
+    }
+
+    main {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        overflow-y: scroll;
+    }
+
     nav {
         position: relative;
         height: auto;
         width: 100vw;
         top: 0;
-        background-color: #4e7eb2;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     nav ul {
@@ -105,28 +160,36 @@ footer {
 
     nav ul li {
         display: block;
-        width: 100%; /* Stack items vertically */
+        width: 100%;
+        /* Stack items vertically */
     }
 
     nav ul li a {
-        padding: 12px 20px; /* Adjust padding for better touch targets */
+        padding: 12px 20px;
+        /* Adjust padding for better touch targets */
     }
 
     nav ul li.dropdown {
-        position: static; /* Make dropdown behave as part of the flow */
+        position: static;
+        /* Make dropdown behave as part of the flow */
     }
 
     nav ul li .dropdown-content {
-        position: relative; /* Position dropdown inside the flow */
+        position: relative;
+        /* Position dropdown inside the flow */
         min-width: 100%;
-        display: none; /* Keep dropdown hidden initially */
+        display: none;
+        /* Keep dropdown hidden initially */
     }
 
     nav ul li.dropdown:hover .dropdown-content {
-        display: block; /* Show dropdown on hover */
+        display: block;
+        /* Show dropdown on hover */
     }
 
     nav ul li .dropdown-content li a {
-        padding: 12px 20px; /* Adjust padding for mobile */
+        padding: 12px 20px;
+        padding-left: 10vw;
+        /* Adjust padding for mobile */
     }
 }
