@@ -114,6 +114,15 @@ nav ul li .dropdown-content li a:hover {
     background-color: #295584;
 }
 
+nav .logo {
+    position: absolute; 
+    border-bottom-left-radius: 15%;
+    top: 0; 
+    right: 0; 
+    height: 12.125vh;  
+    z-index: 20; 
+}
+
 footer {
     text-align: center;
     background-color: #4e7eb2;

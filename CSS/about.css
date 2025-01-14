@@ -1,13 +1,3 @@
-header img {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 12%;
-    object-fit: cover;
-    opacity: 1;
-    z-index: 1;
-}
-
 .team-container {
     display: block;
     margin: 0;
