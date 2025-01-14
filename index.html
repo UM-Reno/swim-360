@@ -7,9 +7,16 @@
     <title>Swim-360 Home</title>
     <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 
-<body style="background-image: url(pictures/indexImage.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+<body
+    style="background-image: url(pictures/indexImage.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+    <audio autoplay>
+        <source src="Assets/landingPageAudio.mp3" type="audio/mp3">
+    </audio>
+
     <!-- Navbar-->
     <nav>
         <ul>
@@ -32,7 +39,62 @@
     </header>
 
     <main>
-        
+        <div class="container">
+            <!-- Main box that slides -->
+            <div class="box-container">
+                <div class="box" id="box1">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Pioneering AI-powered swim coaching system<br>
+                        Combines video analysis with real-time biometric data<br>
+                    </p>
+                </div>
+
+                <div class="box" id="box2">
+                    <h2>Technical Innovation</h2>
+                    <p>
+                        Explainable AI framework<br>
+                        Integration of video and sensor data<br>
+                        Large-scale diverse dataset development<br>
+                        Real-time analysis capabilities<br>
+                    </p>
+                </div>
+
+                <div class="box" id="box3">
+                    <h2>Key Features</h2>
+                    <p>
+                        Real-time biometric monitoring<br>
+                        Comprehensive stroke analysis<br>
+                        Clear, actionable feedback<br>
+                        Personalised coaching recommendations<br>
+                    </p>
+                </div>
+
+                <div class="box" id="box4">
+                    <h2>Expected Impact</h2>
+                    <p>
+                        Revolution in swim training methodology<br>
+                        Enhanced understanding of performance<br>
+                        Advanced sports analytics development<br>
+                        Improved athlete development<br>
+                    </p>
+                </div>
+
+                <div class="box" id="box5">
+                    <h2>Partners</h2>
+                    <p>N/A</p>
+                </div>
+            </div>
+
+            <!-- Circles indicating the current box -->
+            <div class="circles-container">
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle2"></div>
+                <div class="circle" id="circle3"></div>
+                <div class="circle" id="circle4"></div>
+                <div class="circle" id="circle5"></div>
+            </div>
+        </div>
     </main>
 
     <footer>
