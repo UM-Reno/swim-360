@@ -201,4 +201,8 @@ footer {
         padding-left: 10vw;
         /* Adjust padding for mobile */
     }
+
+    nav .logo {
+        display: none;
+    }
 }

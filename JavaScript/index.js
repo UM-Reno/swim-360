@@ -31,7 +31,7 @@ function changeBox() {
 
     // Show the new box
     boxes[currentIndex].style.display = 'flex';
-    
+
     // Add the active class to the new circle
     circles[currentIndex].classList.add('active');
 }
@@ -75,3 +75,14 @@ function resetInterval() {
 }
 
 resetInterval();
+
+window.onload = function () {
+    // Start the animation by adding the class
+    document.body.classList.add('animation-finish');
+
+    // Wait for 2 seconds (the duration of the animation)
+    setTimeout(function () {
+        // Display the main content
+        document.querySelector('main').style.display = 'flex';
+    }, 3000);s
+};
