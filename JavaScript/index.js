@@ -76,13 +76,51 @@ function resetInterval() {
 
 resetInterval();
 
-window.onload = function () {
-    // Start the animation by adding the class
-    document.body.classList.add('animation-finish');
+// Function to add more fish clones continuously
+const fishContainer = document.getElementById('fish-container');
+const fishElements = document.querySelectorAll('.fish');
+let interval = 0.3
 
+function cloneFish() {
+    fishElements.forEach(fish => {
+        // Clone each fish
+        const clone = fish.cloneNode(true);
+        fishContainer.appendChild(clone);
+
+        // Set a new unique index for the cloned fish
+        const fishIndex = fishContainer.children.length;
+        clone.style.setProperty('--fish-index', fishIndex);
+
+        // Randomize the start position (from 0% to 75%)
+        const randomTop = Math.random() * 75; // Random value between 0 and 75
+        clone.style.setProperty('top', `${randomTop}%`);
+
+        // Randomize the animation delay (from 0s to 0.3s)
+        const randomDelay = (Math.random() * 0.3) + interval; // Random value between 0 and 0.3 + the interval
+        interval += 0.3
+        clone.style.setProperty('animation-delay', `${randomDelay}s`);
+
+        // Restart the animation by triggering a reflow
+        clone.offsetHeight; // This forces a reflow, restarting the animation
+    });
+}
+
+// Run the cloning every few seconds to simulate continuous fish movement
+fishAnimationCloner = setInterval(cloneFish, 5);
+
+window.onload = function () {
     // Wait for 2 seconds (the duration of the animation)
     setTimeout(function () {
         // Display the main content
         document.querySelector('main').style.display = 'flex';
-    }, 3000);s
+
+        // Hide the fish container
+        document.getElementById('fish-container').style.display = 'none';
+    }, 3000);
+
+    setTimeout(function () {
+        // Stop the cloning interval since the fish container is hidden
+        clearInterval(fishAnimationCloner);
+    }, 15);
+
 };

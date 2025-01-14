@@ -2,51 +2,77 @@ main {
     height: 100%;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.animation-container {
+#fish-container {
     position: absolute;
-    height: 90%;
-    width: 100%;
+    /* This ensures the fish are positioned relative to this container */
+    top: 10%;
+    left: 0;
+    width: 99vw;
+    /* Full width of the viewport */
+    height: 75vh;
+    /* Adjust according to your fish image size */
     overflow: hidden;
+    /* Hide fish that move out of the container bounds */
 }
 
-.image {
+.fish {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    /* This allows each fish to move independently */
+    width: 6vw;
+    left: -6vw;
+    min-width: 50px;
+    /* Adjust the size of the fish image */
+    height: auto;
+    animation: moveFish 3s linear infinite;
+    opacity: 0.5;
 }
 
-.left-image img,
-.right-image img {
-    max-width: 10vw;
-    margin: 10px;
-    padding: 25px;
+/* Randomize vertical starting positions */
+.fish:nth-child(1) {
+    top: 0%;
+    animation-delay: 0s;
 }
 
-.left-image {
-    left: -100%;
+.fish:nth-child(2) {
+    top: 15%;
+    animation-delay: 0.1s;
 }
 
-.right-image {
-    right: -100%;
+.fish:nth-child(3) {
+    top: 30%;
+    animation-delay: 0.4s;
 }
 
-.animation-finish .left-image {
-    left: 100%;
-    transition: left 3.1s linear;
+.fish:nth-child(4) {
+    top: 45%;
+    animation-delay: 0.26s;
 }
 
-.animation-finish .right-image {
-    right: 100%;
-    transition: right 3.1s linear;
+.fish:nth-child(5) {
+    top: 60%;
+    animation-delay: 0s;
 }
 
-.animation-finish main {
-    display: block;
-    opacity: 1;
+.fish:nth-child(6) {
+    top: 75%;
+    animation-delay: 0.3s;
+}
+
+/* Add more `nth-child` rules for additional fish with varied Y-axis positions and random delays */
+
+@keyframes moveFish {
+    0% {
+        transform: translateX(-100%);
+        /* Start off-screen on the left */
+    }
+
+    100% {
+        transform: translateX(100vw);
+        /* Move across to the right edge of the screen */
+    }
 }
 
 .container {
@@ -86,6 +112,12 @@ main {
     font-size: large;
     max-width: 80%;
     line-height: 2.25;
+}
+
+.box img {
+    max-width: 90%;
+    max-height: 30%;
+    padding: 1%;
 }
 
 .circles-container {
