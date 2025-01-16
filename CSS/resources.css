@@ -1,0 +1,61 @@
+/* Used by Resource Pages such as "project", "papers" and "leaflets". */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 25vh;
+    height: fit-content;
+    padding: 0;
+}
+
+.left-aligned {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.left-aligned .image {
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.left-aligned .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-aligned {
+    background-color: #4e7eb2;
+    border-radius: 15px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.right-aligned .image {
+    width: 20%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.right-aligned .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    color: white;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 1em;
+}

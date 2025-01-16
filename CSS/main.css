@@ -29,7 +29,8 @@ main {
     padding: 0;
     padding-right: 5vw;
     padding-left: 5vw;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* WebKit scrollbar styles */
