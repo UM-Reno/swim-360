@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonttypes/MoreSugar-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Basic CSS to give the page a slight gray background */
 body {
     display: flex;
@@ -5,7 +12,7 @@ body {
     background: linear-gradient(0deg, #dae4ec 0%, #bed8f0 50vh) no-repeat;
     background-color: #c7dcee;
     /* Slight gray background */
-    font-family: Arial, sans-serif;
+    font-family: 'CustomFont', sans-serif;
     /* Set a clean font */
     margin: 0;
     margin-top: 20vh;
@@ -140,7 +147,7 @@ nav ul li .dropdown-content li a:hover {
 
 footer {
     text-align: center;
-    background-color: #4e7eb2;
+    background-color: #7da3cc;
     color: white;
     height: 10vh;
     width: 100vw;
