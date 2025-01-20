@@ -166,7 +166,6 @@ footer img {
     background-color: white;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 25px;
     height: 100%;
 }
 
@@ -244,5 +243,9 @@ footer img {
 
     nav .logo {
         display: none;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
