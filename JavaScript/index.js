@@ -104,23 +104,3 @@ function cloneFish() {
         clone.offsetHeight; // This forces a reflow, restarting the animation
     });
 }
-
-// Run the cloning every few seconds to simulate continuous fish movement
-fishAnimationCloner = setInterval(cloneFish, 5);
-
-window.onload = function () {
-    // Wait for 2 seconds (the duration of the animation)
-    setTimeout(function () {
-        // Display the main content
-        document.querySelector('main').style.display = 'flex';
-
-        // Hide the fish container
-        document.getElementById('fish-container').style.display = 'none';
-    }, 3000);
-
-    setTimeout(function () {
-        // Stop the cloning interval since the fish container is hidden
-        clearInterval(fishAnimationCloner);
-    }, 15);
-
-};

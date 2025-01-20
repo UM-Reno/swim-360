@@ -10,47 +10,31 @@
     <link rel="stylesheet" href="CSS/index.css">
 </head>
 
-<body
-    style="background-image: url(pictures/indexImage.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
-
-    <audio autoplay>
-        <source src="Assets/landingPageAudio.mp3" type="audio/mp3">
-    </audio>
-
+<body>
     <!-- Navbar-->
     <nav>
         <ul>
+            <img src="pictures/logo.png" alt="SWIM-360" class="logo">
             <li><a href="#" class="current">Home</a></li>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="project.html">Project Info</a></li>
             <li class="dropdown">
                 <a href="#">Resources</a>
                 <ul class="dropdown-content">
-                    <li><a href="project.html">Project Info</a></li>
                     <li><a href="papers.html">Our Papers</a></li>
                     <li><a href="leaflets.html">Leaflets</a></li>
                 </ul>
             </li>
             <li><a href="media.html">Media</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
-        <img src="pictures/logo.png" alt="Logo" class="logo">
     </nav>
 
-    <header>
-        <h1>Swim-360</h1>
-    </header>
+    <main>
+        <header>
+            <h1>Swim-360</h1>
+        </header>
 
-    <!-- Landing Page Animation -->
-    <div id="fish-container">
-        <img src="pictures/landingPage/fishTwo.png" class="fish" />
-        <img src="pictures/landingPage/fishThree.png" class="fish" />
-        <img src="pictures/landingPage/fishTwo.png" class="fish" />
-        <img src="pictures/landingPage/fishOne.png" class="fish" />
-        <img src="pictures/landingPage/fishFour.png" class="fish" />
-        <img src="pictures/landingPage/fishThree.png" class="fish" />
-        <!-- Add more fish images as needed -->
-    </div>
-
-    <main style="display: none;">
         <div class="container">
             <!-- Main box that slides -->
             <div class="box-container">
@@ -111,12 +95,15 @@
                 <div class="circle" id="circle5"></div>
             </div>
         </div>
+
+        <footer>
+            <img src="pictures/tech-dev.png" alt="Technology Development Program"> <br>
+            <img src="pictures/UM.png" alt="University of Malta"> <br>
+            <img src="pictures/Xjenza.png" alt="Xjenza Malta"> <br>
+        </footer>
     </main>
 
-    <footer>
-        <p>&copy; Swim-360</p>
-    </footer>
-
+    <script src="JavaScript/main.js"></script>
     <script src="JavaScript/index.js"></script>
 </body>
 
