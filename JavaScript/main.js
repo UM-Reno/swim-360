@@ -3,22 +3,36 @@ function isPhone() {
     return window.innerWidth <= 768;
 }
 
-if (!isPhone()) {  // Only add the scroll event listener if it's not a phone
-    window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('nav');
-        const logo = document.querySelector('.logo');
+// Function to handle scroll behavior
+function handleScroll() {
+    const navbar = document.querySelector('nav');
+    const logo = document.querySelector('.logo');
 
-        if (window.scrollY > 10) {
-            navbar.style.top = '0vh';  // When scrolling down, set top to 0
-            navbar.style.height = '10vh';
-            navbar.style.borderTopWidth = '0';
-            logo.style.height = '10vh';
-        }
-        else {
-            navbar.style.top = '1vh';  // When at the top of the page, set top back to 1vh
-            navbar.style.height = '12vh';
-            navbar.style.borderTopWidth = '5px';
-            logo.style.height = '12vh';
-        }
-    });
+    if (window.scrollY > 10) {
+        navbar.style.top = '0vh';  // When scrolling down, set top to 0
+        navbar.style.height = '10vh';
+        navbar.style.borderTopWidth = '0';
+        logo.style.height = '10vh';
+    }
+    else {
+        navbar.style.top = '1vh';  // When at the top of the page, set top back to 1vh
+        navbar.style.height = '12vh';
+        navbar.style.borderTopWidth = '5px';
+        logo.style.height = '12vh';
+    }
 }
+
+// Function to add or remove the scroll event listener based on screen size
+function adjustScrollListener() {
+    if (isPhone()) {
+        window.removeEventListener('scroll', handleScroll);  // Remove scroll listener for phones
+    } else {
+        window.addEventListener('scroll', handleScroll);  // Add scroll listener for larger screens
+    }
+}
+
+// Initial setup
+adjustScrollListener();
+
+// Re-adjust listener on window resize
+window.addEventListener('resize', adjustScrollListener);
