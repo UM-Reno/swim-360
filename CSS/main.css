@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(0deg, #dae4ec 0%, #b3d2ef 50vh) no-repeat;
+    background: linear-gradient(0deg, #dae4ec 0%, #bbd2e8 50vh) no-repeat;
     background-color: #c7dcee;
     /* Slight gray background */
     font-family: 'CustomFont', sans-serif;
@@ -107,6 +107,7 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 nav ul li a:hover {
