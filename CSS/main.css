@@ -170,6 +170,14 @@ footer img {
     height: 100%;
 }
 
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 /* Tablet responsiveness */
 @media (max-width: 1500px) {
     nav ul li a {

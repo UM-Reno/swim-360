@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (content) {
                 if (content.style.display === 'none' || content.style.display === '') {
                     content.style.display = 'inline';
-                    this.textContent = 'See Less';
+                    this.textContent = 'Read Less';
                 } else {
                     content.style.display = 'none';
-                    this.textContent = 'See More';
+                    this.textContent = 'Read More';
                 }
             }
         });
