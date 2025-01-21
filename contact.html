@@ -7,6 +7,7 @@
     <title>Swim-360 Contact Us</title>
     <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/contact.css">
 </head>
 
 <body>
@@ -33,7 +34,37 @@
         <header>
             <h1>Contact Us</h1>
         </header>
-    
+
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submitButton">Submit</button>
+        </form>
+
+        <div class="other-options">
+            <p>Also available at:</p>
+            <div class="button-group">
+                <button class="social-button" style="background-image: url('pictures/otherLogos/facebook.png' );"
+                    alt="Facebook" onclick="window.open('#', '_blank');"></button>
+                <button class="social-button" style="background-image: url('pictures/otherLogos/instagram.png');"
+                    alt="Instagram" onclick="window.open('#', '_blank');"></button>
+                <button class="social-button" style="background-image: url('pictures/otherLogos/x.png');"
+                    alt="X / Twitter" onclick="window.open('https://x.com/swim_360', '_blank');"></button>
+                <button class="social-button" style="background-image: url('pictures/otherLogos/gmail.png');"
+                    alt="GMail" onclick="sendEmail();"></button>
+            </div>
+        </div>
+
         <footer>
             <img src="pictures/tech-dev.png" alt="Technology Development Program"> <br>
             <img src="pictures/UM.png" alt="University of Malta"> <br>
@@ -42,6 +73,7 @@
     </main>
 
     <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/contact.js"></script>
 </body>
 
 </html>

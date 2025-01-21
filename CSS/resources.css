@@ -11,6 +11,8 @@ main {
     min-height: 25vh;
     height: fit-content;
     padding: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .left-aligned {
@@ -18,10 +20,8 @@ main {
     justify-content: flex-start;
 }
 
-.left-aligned .image {
-    width: 20%;
-    height: auto;
-    margin-right: 20px;
+.content {
+    font-family: 'Ariel', sans-serif;
 }
 
 .left-aligned .content {
@@ -31,16 +31,9 @@ main {
 }
 
 .right-aligned {
-    background-color: #4e7eb2;
-    border-radius: 15px;
+    background-color: #7da3cc;
     flex-direction: row-reverse;
     justify-content: flex-start;
-}
-
-.right-aligned .image {
-    width: 20%;
-    height: auto;
-    margin-left: 20px;
 }
 
 .right-aligned .content {
@@ -51,6 +44,13 @@ main {
     color: white;
 }
 
+.image {
+    min-width: 20%;
+    max-width: 40%;
+    height: auto;
+    margin: 20px;
+}
+
 .title {
     font-size: 1.5em;
     font-weight: bold;
@@ -58,4 +58,34 @@ main {
 
 .text {
     font-size: 1em;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1500px) {
+    .image {
+        min-width: 30%;
+        max-width: 50%;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .left-aligned, .right-aligned {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content, .right-aligned .content {
+        text-align: center;
+    }
+
+    .image {
+        min-width: 60%;
+        max-width: 80%;
+    }
+
+    .box {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
 }

@@ -23,20 +23,20 @@ body {
 }
 
 /* WebKit scrollbar styles */
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #7da3cc;
     border-radius: 2px;
 }
 
-body::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #4e7eb2;
 }
 
@@ -47,7 +47,7 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin: 25px;
     font-size: 2.5rem;
 }
 
