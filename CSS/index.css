@@ -5,74 +5,27 @@ main {
     transition: opacity 0.5s ease-in-out;
 }
 
-#fish-container {
-    position: absolute;
-    /* This ensures the fish are positioned relative to this container */
-    top: 10%;
-    left: 0;
-    width: 99vw;
-    /* Full width of the viewport */
-    height: 75vh;
-    /* Adjust according to your fish image size */
-    overflow: hidden;
-    /* Hide fish that move out of the container bounds */
+.latest {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    min-height: 25vh;
+    height: fit-content;
+    padding: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #7da3cc;
+    color: white;
 }
 
-.fish {
-    position: absolute;
-    /* This allows each fish to move independently */
-    width: 6vw;
-    left: -6vw;
-    min-width: 50px;
-    /* Adjust the size of the fish image */
-    height: auto;
-    animation: moveFish 3s linear infinite;
-    opacity: 0.5;
+.content {
+    font-family: 'Ariel', sans-serif;
 }
 
-/* Randomize vertical starting positions */
-.fish:nth-child(1) {
-    top: 0%;
-    animation-delay: 0s;
-}
-
-.fish:nth-child(2) {
-    top: 15%;
-    animation-delay: 0.1s;
-}
-
-.fish:nth-child(3) {
-    top: 30%;
-    animation-delay: 0.4s;
-}
-
-.fish:nth-child(4) {
-    top: 45%;
-    animation-delay: 0.26s;
-}
-
-.fish:nth-child(5) {
-    top: 60%;
-    animation-delay: 0s;
-}
-
-.fish:nth-child(6) {
-    top: 75%;
-    animation-delay: 0.3s;
-}
-
-/* Add more `nth-child` rules for additional fish with varied Y-axis positions and random delays */
-
-@keyframes moveFish {
-    0% {
-        transform: translateX(-100%);
-        /* Start off-screen on the left */
-    }
-
-    100% {
-        transform: translateX(100vw);
-        /* Move across to the right edge of the screen */
-    }
+.text {
+    font-size: 1em;
 }
 
 .container {
@@ -124,6 +77,7 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .circle {

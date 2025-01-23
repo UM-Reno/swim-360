@@ -7,12 +7,14 @@ main {
 .box {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 84%;
     min-height: 25vh;
     height: fit-content;
     padding: 0;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 .left-aligned {
@@ -45,31 +47,43 @@ main {
 }
 
 .image {
-    min-width: 20%;
-    max-width: 40%;
+    width: 30%;
     height: auto;
     margin: 20px;
+    border: solid 5px #7da3cc;
+    border-radius: 8px;
+}
+
+.right-aligned .image {
+    border-color: #f1f1f1;
 }
 
 .title {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
 .text {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 /* Tablet responsiveness */
 @media (max-width: 1500px) {
     .image {
-        min-width: 30%;
-        max-width: 50%;
+        width: 40%;
     }
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+    .title {
+        font-size: 1.5em;
+    }
+    
+    .text {
+        font-size: 1em;
+    }
+
     .left-aligned, .right-aligned {
         flex-direction: column;
         justify-content: center;
@@ -80,12 +94,15 @@ main {
     }
 
     .image {
-        min-width: 60%;
-        max-width: 80%;
+        width: 80%;
     }
 
     .box {
+        width: 90%;
         padding-top: 1vh;
         padding-bottom: 1vh;
+        padding-left: 5%;
+        padding-right: 5%;
     }
+
 }

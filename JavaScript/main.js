@@ -1,3 +1,4 @@
+/*
 // Function to check if the device is a phone
 function isPhone() {
     return window.innerWidth <= 768;
@@ -39,6 +40,12 @@ function adjustScrollListener() {
     }
 }
 
+adjustScrollListener();
+
+// Re-adjust listener on window resize
+window.addEventListener('resize', adjustScrollListener);
+*/
+
 // Sets up the page with systems such as anti-image copy
 function setupWebpage() {
     const images = document.querySelectorAll('img');
@@ -50,9 +57,7 @@ function setupWebpage() {
 }
 
 // Initial setup
-adjustScrollListener();
+
 setupWebpage();
 
-// Re-adjust listener on window resize
-window.addEventListener('resize', adjustScrollListener);
 
