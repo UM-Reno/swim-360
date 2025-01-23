@@ -20,13 +20,21 @@ function handleScroll() {
         navbar.style.borderTopWidth = '5px';
         logo.style.height = '12vh';
     }
+    
 }
 
 // Function to add or remove the scroll event listener based on screen size
+var wasntPhone = false;
 function adjustScrollListener() {
     if (isPhone()) {
         window.removeEventListener('scroll', handleScroll);  // Remove scroll listener for phones
-    } else {
+
+        if(wasntPhone == true){
+            location.reload();
+        }
+    }
+    else {
+        wasntPhone = true;
         window.addEventListener('scroll', handleScroll);  // Add scroll listener for larger screens
     }
 }

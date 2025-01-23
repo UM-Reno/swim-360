@@ -75,21 +75,22 @@ nav {
     transition: top 0.2s ease-out, height 0.2s linear;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    margin-right: 15vw;
-    padding: 0;
-    height: 100%;
-    text-align: right;
-}
-
 nav .logo {
     position: fixed;
     left: 15vw;
     max-height: 12vh;
     display: inline-block;
     transition: height 0.2s linear;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 15vw;
+    margin-left: 17vw;
+    padding: 0;
+    height: 100%;
+    text-align: right;
 }
 
 nav ul li {
@@ -179,11 +180,20 @@ img {
 }
 
 /* Tablet responsiveness */
-@media (max-width: 1500px) {
+@media (max-width: 1366px) {
+    nav .logo {
+        left: 1%;
+    }
+
+    nav ul {
+        margin-right: 0;
+        margin-left: 10%;
+    }
+
     nav ul li a {
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
 }
 
@@ -201,6 +211,8 @@ img {
 
     nav ul {
         width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     nav ul li {
