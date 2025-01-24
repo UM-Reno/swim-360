@@ -27,7 +27,6 @@ function changeBox() {
 
     // Move to the next box
     currentIndex = (currentIndex + 1) % totalBoxes;
-    console.log("Current index: " + currentIndex);
 
     // Show the new box
     boxes[currentIndex].style.display = 'flex';
@@ -38,8 +37,6 @@ function changeBox() {
 
 // Function to jump to a specific box based on the circle clicked
 function goToBox(index) {
-    console.log("Box: " + index + " chosen.");
-
     // If the clicked circle is already active, do nothing
     if (index === currentIndex) return;
 

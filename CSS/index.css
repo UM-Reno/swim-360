@@ -76,7 +76,7 @@ main {
     background-color: transparent;
 }
 
-.latest {
+.latest, .upcoming {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,21 +85,36 @@ main {
     height: fit-content;
     padding: 5%;
     background-color: #7da3cc;
-    color: white;
 }
 
-.latest h2 {
+.latest h2, .upcoming h2 {
+    color: white;
     text-align: center;
-    margin: 0;
+    margin: 10px;
     font-size: xx-large;
 }
 
+.upcoming{
+    background-color: inherit;
+}
+
+.upcoming h2{
+    color: #7da3cc;
+}
+
 .content {
+    background-color: white;
     font-family: 'Ariel', sans-serif;
-    text-align: center;
-    max-width: 30%;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 25%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.content:hover {
+    transform: translateY(-10px);
 }
 
 .news-container {
@@ -108,6 +123,47 @@ main {
     margin: auto;
     align-items: center;
     justify-content: center;
+    text-align: justify;
+}
+
+.news-container .title {
+    text-align: center;
+}
+
+.read-article {
+    margin: auto;
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #5782af;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.read-article:hover {
+    font-weight: bold;
+}
+
+.video {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 0;
+    padding-bottom: 30%;
+    margin-bottom: 5%;
+    box-shadow: 2px 15px 16px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Mobile responsiveness */
@@ -127,6 +183,7 @@ main {
 
     .boxContent h2{
         text-align: center;
+        font-size: x-large;
     }
     
     .boxContent p {
@@ -135,13 +192,13 @@ main {
         text-align: center;
     }
 
-    .latest {
+    .latest, .upcoming {
         width: 95%;
         padding-left: 2.5%;
         padding-right: 2.5%;
     }
 
     .content {
-        max-width: 43%;
+        max-width: 90%;
     }
 }

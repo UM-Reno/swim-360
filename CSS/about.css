@@ -67,22 +67,15 @@ main {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s;
-}
-
-.see-more-btn:hover {
-    background-color: #fff;
-}
-
-.more-info {
-    display: none;
-}
-
-.see-more-btn {
     display: inline-block;
 }
 
 .see-more-btn:hover {
     font-weight: bold;
+}
+
+.more-info {
+    display: none;
 }
 
 /* Mobile responsiveness */
