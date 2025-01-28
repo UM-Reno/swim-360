@@ -58,31 +58,6 @@ button:hover {
     color: #333;
 }
 
-.button-group {
-    width: 30%;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.social-button {
-    padding: 15px;
-    width: 80px;
-    height: 80px;
-    background-size: cover;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-}
-
-.social-button:hover {
-    transform: scale(1.1);
-}
-
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .contact-form {
@@ -95,10 +70,5 @@ button:hover {
 
     .other-options {
         margin-top: 20px;
-    }
-
-    .social-button {
-        width: 50px;
-        height: 50px;
     }
 }

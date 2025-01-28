@@ -86,7 +86,7 @@ nav .logo {
 nav ul {
     list-style-type: none;
     margin: 0;
-    margin-right: 15vw;
+    margin-right: 13vw;
     padding: 0;
     height: 100%;
     text-align: right;
@@ -149,19 +149,12 @@ nav ul li .dropdown-content li a:hover {
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
     background-color: #7da3cc;
     color: white;
     margin-top: 5vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
     width: 100%;
-
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 footer img {
@@ -173,12 +166,52 @@ footer img {
     border-radius: 8px;
 }
 
+.footerDesign {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    border-radius: 12px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 img {
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+.button-group {
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-button {
+    padding: 15px;
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
 }
 
 /* Tablet responsiveness */
@@ -255,11 +288,16 @@ img {
         width: 100%;
     }
 
-    footer {
+    footer img {
+        margin: 0;
+    }
+
+    .footerDesign {
         flex-direction: column;
     }
 
-    footer img {
-        margin: 0;
+    .social-button {
+        width: 50px;
+        height: 50px;
     }
 }

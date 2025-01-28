@@ -43,6 +43,7 @@ main {
 .boxContent p {
     font-size: large;
     max-width: 80%;
+    font-size: 1.5em;
     line-height: 1.5;
     text-align: justify;
 }
@@ -188,6 +189,7 @@ iframe {
     
     .boxContent p {
         margin: auto;
+        font-size: 1.1em;
         line-height: 1.2;
         text-align: center;
     }
