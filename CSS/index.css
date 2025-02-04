@@ -119,7 +119,7 @@ main {
 }
 
 .news-container {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     margin: auto;
     align-items: center;
