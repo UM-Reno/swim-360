@@ -14,7 +14,7 @@
     <!-- Navbar-->
     <nav>
         <ul>
-            <img src="pictures/logo.png" alt="SWIM-360" class="logo">
+            <img src="pictures/mainLogos/swim-360Logo.png" alt="SWIM-360" class="logo">
             <li><a href="#" class="current">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="project.html">Project Info</a></li>
@@ -115,34 +115,29 @@
 
             <div class="news-container">
                 <div class="content">
-                    <h3 class="title">News Title</h3>
+                    <h3 class="title">University of Malta launches AI-powered swimming analysis project</h3>
                     <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ligula in tellus pharetra
-                        finibus. Nulla semper enim facilisis sem convallis, ut maximus turpis dictum. Proin leo est,
-                        condimentum eget nisl sit amet, pulvinar venenatis diam. Ut porta feugiat justo, in consequat
-                        risus vestibulum fermentum. Maecenas dignissim sapien in tellus varius gravida sit amet a lacus.
-                        Duis pulvinar bibendum diam non efficitur. Interdum et malesuada fames ac ante ipsum primis in
-                        faucibus. Donec fringilla sapien non dignissim mattis. Maecenas a turpis ut sapien pretium
-                        eleifend. Ut lorem ex, pellentesque at dui sit amet, laoreet convallis neque.<br>
-                        <button class="read-article">Read Article</button>
+                        The University of Malta’s Department of Artificial Intelligence announces SWIM-360, a pioneering
+                        €200,000 research project that combines artificial intelligence with competitive swimming
+                        training<br><br>
+                        This initiative marks a significant step forward in Malta’s digital innovation landscape...<br>
+                        <button class="read-article" onclick="openSource('News', 1)">Read Article</button>
                     </p>
                 </div>
 
                 <div class="content">
-                    <h3 class="title">News Title</h3>
+                    <h3 class="title">Our Poster Information</h3>
                     <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ligula in tellus pharetra
-                        finibus. Nulla semper enim facilisis sem convallis, ut maximus turpis dictum. Proin leo est,
-                        condimentum eget nisl sit amet, pulvinar venenatis diam. Ut porta feugiat justo, in consequat
-                        risus vestibulum fermentum. Maecenas dignissim sapien in tellus varius gravida sit amet a lacus.
-                        Duis pulvinar bibendum diam non efficitur. Interdum et malesuada fames ac ante ipsum primis in
-                        faucibus. Donec fringilla sapien non dignissim mattis. Maecenas a turpis ut sapien pretium
-                        eleifend. Ut lorem ex, pellentesque at dui sit amet, laoreet convallis neque.<br>
-                        <button class="read-article">Read Article</button>
+                        The SWIM-360 project aims to revolutionise competitive swimming performance analysis by
+                        integrating multimodal AI and sports science. Funded by Xjenza Malta's Thematic Programmes and
+                        the Malta Digital Innovation Authority (2024-2026), this research seeks to address critical
+                        limitations in current training methods. The primary innovation is the development of an AI
+                        system that combines real-time sensor data with video analysis...<br>
+                        <button class="read-article" onclick="openSource('News', 0)">Read Article</button>
                     </p>
                 </div>
 
-                <div class="content">
+                <div class="content" style="display: none;">
                     <h3 class="title">News Title</h3>
                     <p class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ligula in tellus pharetra
@@ -162,7 +157,7 @@
             <h2 class="title">Upcoming Events</h2>
 
             <div class="news-container">
-                <div class="content">
+                <div class="content" style="display: none;">
                     <h3 class="title">Event Name</h3>
                     <p class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ligula in tellus pharetra
@@ -176,7 +171,7 @@
                     </p>
                 </div>
 
-                <div class="content">
+                <div class="content" style="display: none;">
                     <h3 class="title">Event Name</h3>
                     <p class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ligula in tellus pharetra
@@ -190,7 +185,7 @@
                     </p>
                 </div>
 
-                <div class="content">
+                <div class="content" style="display: none;">
                     <h3 class="title">Event Name</h3>
                     <p class="text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ligula in tellus pharetra
@@ -208,14 +203,15 @@
 
         <footer>
             <div class="footerDesign">
-                <img src="pictures/otherLogos/thematics.png" alt="Thematic Program"> <br>
-                <img src="pictures/otherLogos/UM.png" alt="University of Malta"> <br>
-                <img src="pictures/otherLogos/Xjenza.png" alt="Xjenza Malta"> <br>
-                <img src="pictures/otherLogos/mdia.png" alt="Malta Digital Innovation Authority"> <br>
+                <img src="pictures/mainLogos/thematics.png" alt="Thematic Program"> <br>
+                <img src="pictures/mainLogos/UM.png" alt="University of Malta"> <br>
+                <img src="pictures/mainLogos/Xjenza.png" alt="Xjenza Malta"> <br>
+                <img src="pictures/mainLogos/mdia.png" alt="Malta Digital Innovation Authority"> <br>
             </div>
             <div class="button-group">
                 <button class="social-button" style="background-image: url('pictures/otherLogos/facebook.png' );"
-                    alt="Facebook" onclick="window.open('#', '_blank');"></button>
+                    alt="Facebook"
+                    onclick="window.open('https://www.facebook.com/profile.php?id=61572294188050', '_blank');"></button>
                 <button class="social-button" style="background-image: url('pictures/otherLogos/instagram.png');"
                     alt="Instagram"
                     onclick="window.open('https://www.instagram.com/swim_360_official/', '_blank');"></button>

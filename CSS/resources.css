@@ -67,6 +67,71 @@ main {
     font-size: 1.2em;
 }
 
+.sourceChoice {
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #cfd5e2;
+}
+
+.sourceChoice img {
+    padding-left: 3px;
+    height: 1.25em;
+    width: auto;
+    vertical-align: bottom;
+}
+
+.sourceChoice:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.documentSplit {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.documentTitles {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.documentEmbed {
+    width: 55%;
+    height: 100%;
+    max-height: 70vh;
+    margin-left: 1%;
+    background-color: white;
+    padding: 1.5%;
+    border-radius: 12px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+
+    overflow-y: scroll;
+    font-family: 'Ariel', sans-serif;
+    text-align: justify;
+}
+
+.documentEmbed h2,h3 {
+    text-align: center;
+    color: #7da3cc;
+}
+
+.documentEmbed p {
+    text-indent: 4%;
+}
+
+.highlight {
+    background-color: rgb(158, 242, 215);
+    transition: background-color 0.3s ease;
+}
+
 /* Tablet responsiveness */
 @media (max-width: 1500px) {
     .image {
@@ -79,17 +144,19 @@ main {
     .title {
         font-size: 1.5em;
     }
-    
+
     .text {
         font-size: 1em;
     }
 
-    .left-aligned, .right-aligned {
+    .left-aligned,
+    .right-aligned {
         flex-direction: column;
         justify-content: center;
     }
 
-    .content, .right-aligned .content {
+    .content,
+    .right-aligned .content {
         text-align: center;
     }
 
@@ -103,6 +170,31 @@ main {
         padding-bottom: 1vh;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .documentSplit {
+        flex-direction: column;
+    }
+
+    .documentTitles {
+        width: 100%;
+    }
+
+    .documentEmbed {
+        width: 90%;
+        margin-left: 1%;
+        padding: 2%;
+    }
+
+    .sourceChoice {
+        display: flex;
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center-align the image and text */
+    }
+
+    .sourceChoice img {
+        height: 1.5em;
+        padding: 5px;
     }
 
 }

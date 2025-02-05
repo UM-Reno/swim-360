@@ -107,6 +107,7 @@ main {
     background-color: white;
     font-family: 'Ariel', sans-serif;
     max-width: 25%;
+    overflow: hidden;
     margin: 15px;
     padding: 10px;
     border-radius: 12px;
@@ -120,7 +121,7 @@ main {
 
 .news-container {
     /*display: flex;*/
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     margin: auto;
     align-items: center;

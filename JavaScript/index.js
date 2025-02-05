@@ -72,3 +72,19 @@ function resetInterval() {
 }
 
 resetInterval();
+
+// Open new tab with the following information
+function openSource(type, code) {
+    // Checks path
+    var relativeUrl;
+
+    if (type == "News") {
+        relativeUrl = ' /news.html';
+    }
+    else if (type == "Paper") {
+        relativeUrl = '/papers.html';
+    }
+
+    const urlWithParams = relativeUrl + '?openSource=' + code;
+    window.location.href = urlWithParams;
+}

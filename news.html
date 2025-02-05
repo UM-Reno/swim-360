@@ -7,13 +7,14 @@
     <title>Swim-360 News</title>
     <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/resources.css">
 </head>
 
 <body>
     <!-- Navbar-->
     <nav>
         <ul>
-            <img src="pictures/logo.png" alt="SWIM-360" class="logo">
+            <img src="pictures/mainLogos/swim-360Logo.png" alt="SWIM-360" class="logo">
             <li><a href="index.html" class="current">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="project.html">Project Info</a></li>
@@ -33,19 +34,80 @@
         <header>
             <h1>News</h1>
         </header>
-    
+
+        <div class="documentSplit">
+            <div class="documentTitles">
+                <div class="content">
+
+                    <p class="sourceChoice" id="1"
+                        onclick="window.open('https://sport.timesofmalta.com/2025/02/04/university-of-malta-launches-ai-powered-swimming-analysis-project/', '_blank')">
+                        <img src="pictures/otherLogos/mini-times.png" alt="E">
+                        University of Malta launches AI-powered swimming analysis project
+                    </p>
+
+                    <p class="sourceChoice" id="0" onclick="toggleDocumentEmbed()">
+                        <img src="pictures/mainLogos/swim-360Logo.png" alt="S">
+                        Our Poster Information
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="documentEmbed" style="display: none;">
+                <h2 class="title">SWIM-360: Multimodal Explainable AI for Holistic Swim Optimisation</h2>
+
+                <h3 class="text">Project brief</h3>
+                <p class="text">
+                    The SWIM-360 project aims to revolutionise competitive swimming performance analysis by
+                    integrating multimodal AI and sports science. Funded by Xjenza Malta's Thematic Programmes and
+                    the Malta Digital Innovation Authority (2024-2026), this research seeks to address critical
+                    limitations in current training methods. The primary innovation is the development of an AI
+                    system that combines real-time sensor data with video analysis to enable advanced biomechanical
+                    tracking and performance optimization. Key objectives include: (1)Developing a multimodal
+                    dataset that integrates synchronized video and sensor data. (2) Implementing real-time
+                    performance monitoring through wearable sensor integration; and (3) Applying machine learning
+                    algorithms for stroke optimization and injury risk prevention.
+                </p>
+
+                <h3 class="text">Methodology</h3>
+                <p class="text">
+                    The project utilises a comprehensive approach involving real-time data processing and advanced AI
+                    technologies. A central feature of the methodology is the use of an explainable AI framework, which
+                    ensures transparency in performance feedback and fosters better communication between coaches and
+                    athletes. The methodology includes collaboration with the Aquatic Sports Association of Malta for
+                    practical validation, targeting Technology Readiness Level 6. Key tools include wearable sensors for
+                    real-time monitoring and sophisticated video analysis software for biomechanical tracking, which
+                    together form a robust system for performance enhancement.
+                </p>
+
+                <h3 class="text">Expected Outcomes</h3>
+                <p class="text">
+                    The expected outcomes of the SWIM-360 project include significant advancements in academic knowledge
+                    concerning AI applications in sports science, as well as the development of innovative training
+                    methodologies for competitive swimming. The project also aims to create scalable frameworks for
+                    performance analysis that can be applied to other sports. Beyond theoretical advancements, the
+                    research has practical implications for improving athletic training, stroke optimisation, and injury
+                    prevention, contributing to the broader field of digital technologies in sports and aligning with
+                    Malta's AI strategy.
+                </p>
+
+            </div>
+        </div>
+
         <footer>
             <div class="footerDesign">
-                <img src="pictures/otherLogos/thematics.png" alt="Thematic Program"> <br>
-                <img src="pictures/otherLogos/UM.png" alt="University of Malta"> <br>
-                <img src="pictures/otherLogos/Xjenza.png" alt="Xjenza Malta"> <br>
-                <img src="pictures/otherLogos/mdia.png" alt="Malta Digital Innovation Authority"> <br>
+                <img src="pictures/mainLogos/thematics.png" alt="Thematic Program"> <br>
+                <img src="pictures/mainLogos/UM.png" alt="University of Malta"> <br>
+                <img src="pictures/mainLogos/Xjenza.png" alt="Xjenza Malta"> <br>
+                <img src="pictures/mainLogos/mdia.png" alt="Malta Digital Innovation Authority"> <br>
             </div>
             <div class="button-group">
                 <button class="social-button" style="background-image: url('pictures/otherLogos/facebook.png' );"
-                    alt="Facebook" onclick="window.open('#', '_blank');"></button>
+                    alt="Facebook"
+                    onclick="window.open('https://www.facebook.com/profile.php?id=61572294188050', '_blank');"></button>
                 <button class="social-button" style="background-image: url('pictures/otherLogos/instagram.png');"
-                    alt="Instagram" onclick="window.open('https://www.instagram.com/swim_360_official/', '_blank');"></button>
+                    alt="Instagram"
+                    onclick="window.open('https://www.instagram.com/swim_360_official/', '_blank');"></button>
                 <button class="social-button" style="background-image: url('pictures/otherLogos/x.png');"
                     alt="X / Twitter" onclick="window.open('https://x.com/swim_360', '_blank');"></button>
             </div>
@@ -53,6 +115,7 @@
     </main>
 
     <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/news.js"></script>
 </body>
 
 </html>
