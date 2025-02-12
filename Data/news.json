@@ -1,0 +1,15 @@
+[
+    {
+      "id": 0,
+      "title": "Our Poster Information",
+      "external": false,
+      "link": "https://docs.google.com/presentation/d/e/2PACX-1vTq3a4wQtA0LzhHSpFwImL2JM8COtPFFqe7uvkJEDCPQpYUv24_q9uLI6Bh1Zu1zA/embed?start=false&loop=false&delayms=60000"
+    },
+    {
+      "id": 1,
+      "title": "University of Malta launches AI-powered swimming analysis project",
+      "external": true,
+      "logo": "pictures/otherLogos/mini-times.png",
+      "link": "https://sport.timesofmalta.com/2025/02/04/university-of-malta-launches-ai-powered-swimming-analysis-project/"
+    }
+  ]

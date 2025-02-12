@@ -104,27 +104,18 @@ main {
 }
 
 .documentEmbed {
-    width: 55%;
-    height: 100%;
-    max-height: 70vh;
+    width: 40%;
+    min-height: 60vh;
+    max-height: 80vh;
     margin-left: 1%;
     background-color: white;
-    padding: 1.5%;
+    padding: 3%;
     border-radius: 12px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 
     overflow-y: scroll;
     font-family: 'Ariel', sans-serif;
     text-align: justify;
-}
-
-.documentEmbed h2,h3 {
-    text-align: center;
-    color: #7da3cc;
-}
-
-.documentEmbed p {
-    text-indent: 4%;
 }
 
 .highlight {
@@ -181,6 +172,8 @@ main {
     }
 
     .documentEmbed {
+        min-height: 0;
+        max-height: fit-content;
         width: 90%;
         margin-left: 1%;
         padding: 2%;
