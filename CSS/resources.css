@@ -99,7 +99,7 @@ main {
 .documentTitles {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
     height: 100%;
 }
 
