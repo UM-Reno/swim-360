@@ -18,5 +18,11 @@
       "external": true,
       "logo": "pictures/otherLogos/mini-maltasport.png",
       "link": "https://maltasport.mt/malta-sports/malta-swimming/university-of-malta-launches-ai-powered-swim-360-project-to-revolutionise-swimming-training/"
+    },
+    {
+      "id": 3,
+      "title": "AI and Big Data Analytics for Natural Disaster Management",
+      "external": false,
+      "link": "https://docs.google.com/presentation/d/e/2PACX-1vSkphrmE5Snzfv7Xfu2hdcexMZLouIO2wNjrcnqVaGE5Zjx1LIKGju6kVnydGQ6nw/embed?start=false&loop=false&delayms=3000"
     }
   ]
