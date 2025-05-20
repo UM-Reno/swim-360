@@ -1,28 +1,35 @@
 [
-    {
-      "id": 0,
-      "title": "Our Poster Information",
-      "external": false,
-      "link": "https://docs.google.com/presentation/d/e/2PACX-1vTq3a4wQtA0LzhHSpFwImL2JM8COtPFFqe7uvkJEDCPQpYUv24_q9uLI6Bh1Zu1zA/embed?start=false&loop=false&delayms=60000"
-    },
-    {
-      "id": 1,
-      "title": "University of Malta launches AI-powered swimming analysis project",
-      "external": true,
-      "logo": "pictures/otherLogos/mini-times.png",
-      "link": "https://sport.timesofmalta.com/2025/02/04/university-of-malta-launches-ai-powered-swimming-analysis-project/"
-    },
-    {
-      "id": 2,
-      "title": "University of Malta launches AI-powered SWIM-360 project to revolutionise swimming training",
-      "external": true,
-      "logo": "pictures/otherLogos/mini-maltasport.png",
-      "link": "https://maltasport.mt/malta-sports/malta-swimming/university-of-malta-launches-ai-powered-swim-360-project-to-revolutionise-swimming-training/"
-    },
-    {
-      "id": 3,
-      "title": "AI and Big Data Analytics for Natural Disaster Management",
-      "external": false,
-      "link": "https://docs.google.com/presentation/d/e/2PACX-1vSkphrmE5Snzfv7Xfu2hdcexMZLouIO2wNjrcnqVaGE5Zjx1LIKGju6kVnydGQ6nw/embed?start=false&loop=false&delayms=3000"
-    }
-  ]
+  {
+    "id": 0,
+    "title": "Our Poster Information",
+    "external": false,
+    "link": "https://docs.google.com/presentation/d/e/2PACX-1vTq3a4wQtA0LzhHSpFwImL2JM8COtPFFqe7uvkJEDCPQpYUv24_q9uLI6Bh1Zu1zA/embed?start=false&loop=false&delayms=60000"
+  },
+  {
+    "id": 1,
+    "title": "University of Malta launches AI-powered swimming analysis project",
+    "external": true,
+    "logo": "pictures/otherLogos/mini-times.png",
+    "link": "https://sport.timesofmalta.com/2025/02/04/university-of-malta-launches-ai-powered-swimming-analysis-project/"
+  },
+  {
+    "id": 2,
+    "title": "University of Malta launches AI-powered SWIM-360 project to revolutionise swimming training",
+    "external": true,
+    "logo": "pictures/otherLogos/mini-maltasport.png",
+    "link": "https://maltasport.mt/malta-sports/malta-swimming/university-of-malta-launches-ai-powered-swim-360-project-to-revolutionise-swimming-training/"
+  },
+  {
+    "id": 3,
+    "title": "AI and Big Data Analytics for Natural Disaster Management",
+    "external": false,
+    "link": "https://docs.google.com/presentation/d/e/2PACX-1vSkphrmE5Snzfv7Xfu2hdcexMZLouIO2wNjrcnqVaGE5Zjx1LIKGju6kVnydGQ6nw/embed?start=false&loop=false&delayms=3000"
+  },
+  {
+    "id": 4,
+    "title": "COOP Services 32nd Easter International Meet 2025",
+    "external": false,
+    "logo": "pictures/otherLogos/mini-facebook.png",
+    "link": "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0BeAaxSTQBGVp2tTNxb2wfBU5oYfFLqkNftk6cZMyAvxe9pwwLP7ZVxV9RMVBuEFYl%26id%3D61572294188050&show_text=true"
+  }
+]
