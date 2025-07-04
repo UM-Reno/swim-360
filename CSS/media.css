@@ -1,0 +1,30 @@
+/* Container styling */
+.embed-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Twitter Grid Styling */
+.twitter-embed-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.twitter-embed-grid .twitter-tweet {
+    flex: 1 1 30%;
+    min-width: 280px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Instagram embed responsiveness */
+.instagram-media {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto !important;
+}

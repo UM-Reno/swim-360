@@ -31,5 +31,12 @@
     "external": false,
     "logo": "pictures/otherLogos/mini-facebook.png",
     "link": "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0BeAaxSTQBGVp2tTNxb2wfBU5oYfFLqkNftk6cZMyAvxe9pwwLP7ZVxV9RMVBuEFYl%26id%3D61572294188050&show_text=true"
+  },
+  {
+    "id": 5,
+    "title": "Swimming in the Deep End of Physics: Why Science Matters in the Pool",
+    "external": true,
+    "logo": "pictures/otherLogos/mini-medium.png",
+    "link": "https://medium.com/@vanessa.camilleri/swimming-in-the-deep-end-of-physics-why-science-matters-in-the-pool-37c54ff59858"
   }
 ]
