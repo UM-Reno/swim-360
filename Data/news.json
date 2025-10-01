@@ -52,5 +52,12 @@
     "external": true,
     "logo": "pictures/otherLogos/mini-x.png",
     "link": "https://x.com/swim_360/status/1972672896825737554"
+  },
+  {
+    "id": 8,
+    "title": "Smarter Swimming: How AI and Wearables Are Redefining Performance in the Pool",
+    "external": false,
+    "logo": "pictures/otherLogos/mini-think.png",
+    "link": "https://thinkmagazine.mt/smarter-swimming-redefining-performance/"
   }
 ]
