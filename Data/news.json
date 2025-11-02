@@ -59,5 +59,13 @@
     "external": false,
     "logo": "pictures/otherLogos/mini-think.png",
     "link": "https://thinkmagazine.mt/smarter-swimming-redefining-performance/"
+  },
+  {
+    "id": 9,
+    "title": "SWIM-360 at the ADIS Conference on Applied Computing",
+    "external": true,
+    "logo": "pictures/otherLogos/mini-x.png",
+    "link": "https://x.com/swim_360/status/1984936276907212992"
   }
+
 ]
